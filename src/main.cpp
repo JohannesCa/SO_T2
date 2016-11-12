@@ -42,6 +42,20 @@ int main(int argc, char **argv)
 		alg1.Print();
 	}
 
+	{
+		ReadInput("inputs/teste1", &pagelist);
+
+		OTM alg1(pagelist);
+		alg1.Print();
+	}
+
+	{
+		ReadInput("inputs/teste2", &pagelist);
+
+		OTM alg1(pagelist);
+		alg1.Print();
+	}
+
 	return 0;
 }
 

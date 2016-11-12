@@ -26,7 +26,7 @@ void FIFO::Process(void)
 			this->_faults++;
 			this->_quadro.push_back(this->_accessOrder[i]);
 
-		}else if(!SearchInt(this->_accessOrder[i], &this->_quadro)){
+		}else if(!SearchInt(this->_accessOrder[i], &this->_quadro, 0)){
 			this->_faults++;
 			this->_quadro.erase(this->_quadro.begin());
 			this->_quadro.push_back(this->_accessOrder[i]);

@@ -30,9 +30,9 @@ inline bool ReadInput(std::string in, std::vector<unsigned int>* pageList) // Re
 	return true;
 }
 
-inline bool SearchInt(unsigned int value, std::vector<unsigned int> *source) // Search int 'value' in 'source'
+inline bool SearchInt(unsigned int value, std::vector<unsigned int> *source, int begin) // Search int 'value' in 'source' from 'begin'
 {
-	for(unsigned int i = 0; i < source->size(); ++i){
+	for(unsigned int i = begin; i < source->size(); ++i){
 		if(source->at(i) == value)
 			return true;
 	}

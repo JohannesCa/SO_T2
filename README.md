@@ -1,6 +1,7 @@
 # Algoritmos de Substituição de Páginas
 
 __Autor:__ Johannes Cavalcante
+
 __Matrícula:__ 11400981
 
 Este consiste na implementação de um simulador dos Algoritmos de Substituição de páginas, que recebendo o número de páginas do quadro e a sequencia de acessos à memória, calcula o número de faltas de página para cada um dos 3 algoritmos implementados.
