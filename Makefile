@@ -7,8 +7,5 @@ INC = includes/
 all:
 	@$(CXX) -I $(INC) $(SRC) $(CXXFLAGS) -o $(BIN)
 
-run:
-	@./$(BIN)
-
 clean:
 	@rm -rf $(BIN)

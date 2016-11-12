@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 {
 	std::vector<unsigned int> pagelist;
 
-/*	if(argc != 2){
+	if(argc != 2){
 		cerr << ">> Use:\t$ ./so-t2 <file name>\n\n";
 		return -1;
 	}
@@ -27,7 +27,17 @@ int main(int argc, char **argv)
 		cerr << "[ERROR] The file '" << argv[1] << "' doesn't exist!\n";
 		return -1;
 	}
-*/
+
+	FIFO alg1(pagelist);
+	OTM alg2(pagelist);
+	LRU alg3(pagelist);
+
+	alg1.Print();
+	alg2.Print();
+	alg3.Print();
+
+
+/* **************   Testing   **************
 	{
 		ReadInput("inputs/teste1", &pagelist);
 
@@ -55,6 +65,22 @@ int main(int argc, char **argv)
 		OTM alg1(pagelist);
 		alg1.Print();
 	}
+
+	{
+		ReadInput("inputs/teste1", &pagelist);
+
+		LRU alg1(pagelist);
+		alg1.Print();
+	}
+
+	{
+		ReadInput("inputs/teste2", &pagelist);
+
+		LRU alg1(pagelist);
+		alg1.Print();
+	}
+
+* ***************************************** */
 
 	return 0;
 }

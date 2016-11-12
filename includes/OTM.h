@@ -26,19 +26,3 @@ public:
 };
 
 #endif /* OTM_H_ */
-
-/*
-class FIFO {
-private:
-	unsigned int _n;
-	int _faults;
-	std::vector<unsigned int> _accessOrder;
-	std::vector<unsigned int> _quadro;
-	void Process(void);
-
-public:
-	FIFO(std::vector<unsigned int> in);
-	void Print(void);
-	int getFaults(void){return this->_faults;};
-};
-*/
