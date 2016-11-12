@@ -25,5 +25,3 @@ Para compilar o projeto faça:
 Para executar, faça a chamada do executável e logo em seguida o nome do arquivo com as inputs:
 
 > $ ./so-t2 nome_do_arquivo
-
-* __OBS:__ O arquivo de entrada deve estar no diretório ___inputs___.
